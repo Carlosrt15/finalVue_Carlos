@@ -1,8 +1,30 @@
-<script setup></script>
+<script setup>
+import Menu from './components/Menu.vue'
+</script>
 
 <template>
-  <h1>Concesionario</h1>
-  
+
+<div class="layout">
+
+  <Menu />
+
+  <main class="contenido">
+    <router-view />
+  </main>
+
+</div>
+
 </template>
 
-<style scoped></style>
+<style>
+
+.layout{
+  display:flex;
+}
+
+.contenido{
+  padding:20px;
+  width:100%;
+}
+
+</style>
